@@ -1,0 +1,79 @@
+{
+  "_comment": "Held-out phrases used only for evaluation. Never add these to intents.json.",
+  "phrases": [
+    ["hey assistant", "greeting"],
+    ["hello hello", "greeting"],
+    ["morning!", "greeting"],
+    ["hi there buddy", "greeting"],
+
+    ["ok bye now", "goodbye"],
+    ["i'm leaving, see ya", "goodbye"],
+    ["exit the program", "goodbye"],
+    ["goodnight jarvis", "goodbye"],
+
+    ["thank you very much", "thanks"],
+    ["that was helpful, thanks", "thanks"],
+    ["great, cheers mate", "thanks"],
+    ["really appreciate your help", "thanks"],
+
+    ["what do people call you", "identity"],
+    ["who built you", "identity"],
+    ["tell me your name", "identity"],
+    ["are you an ai", "identity"],
+
+    ["what all can you do", "capabilities"],
+    ["show me what you can do", "capabilities"],
+    ["i need help", "capabilities"],
+    ["list commands", "capabilities"],
+
+    ["how are you today", "wellbeing"],
+    ["how's your day going", "wellbeing"],
+    ["you doing okay?", "wellbeing"],
+    ["how are things with you", "wellbeing"],
+
+    ["know any good jokes?", "joke"],
+    ["tell me something funny", "joke"],
+    ["i need a laugh", "joke"],
+    ["one more joke", "joke"],
+
+    ["what's the time now", "time"],
+    ["can you tell me what time it is", "time"],
+    ["time check", "time"],
+    ["what time is it right now", "time"],
+
+    ["what's the date", "date"],
+    ["which date is it today", "date"],
+    ["what day is today", "date"],
+    ["tell me today's date", "date"],
+
+    ["how's the weather in bangalore", "weather"],
+    ["is it raining in chennai", "weather"],
+    ["temperature in tokyo", "weather"],
+    ["weather report please", "weather"],
+
+    ["search for python courses", "web_search"],
+    ["google the weather of mars", "web_search"],
+    ["look up deep learning books", "web_search"],
+    ["find me cheap hotels online", "web_search"],
+
+    ["open youtube please", "open_website"],
+    ["go to stackoverflow", "open_website"],
+    ["open github.com", "open_website"],
+    ["launch wikipedia", "open_website"],
+
+    ["please open notepad", "open_app"],
+    ["start the calculator", "open_app"],
+    ["launch task manager", "open_app"],
+    ["open cmd", "open_app"],
+
+    ["close the paint app", "close_app"],
+    ["kill the calculator", "close_app"],
+    ["quit notepad", "close_app"],
+    ["shut down calculator", "close_app"],
+
+    ["open my downloads folder", "open_folder"],
+    ["show the documents folder", "open_folder"],
+    ["open my pictures", "open_folder"],
+    ["take me to my desktop folder", "open_folder"]
+  ]
+}

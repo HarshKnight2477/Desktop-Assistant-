@@ -1,0 +1,492 @@
+{
+  "fallback": [
+    "Sorry, I didn't quite get that. Could you rephrase?",
+    "I'm not sure what you mean. Try asking about the weather, the time, or say \"help\".",
+    "Hmm, I didn't understand. Say \"help\" to see what I can do."
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey there",
+        "hello assistant",
+        "hi jarvis",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "yo",
+        "hiya",
+        "hey buddy",
+        "greetings",
+        "hello there",
+        "hi, anyone there?",
+        "wake up",
+        "hey",
+        "hi there",
+        "hello friend",
+        "good day",
+        "howdy",
+        "hey jarvis",
+        "hello again",
+        "sup",
+        "hi assistant, you there?",
+        "morning"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! I'm listening."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "exit",
+        "quit",
+        "stop",
+        "that's all",
+        "i'm done",
+        "see you",
+        "good night",
+        "talk to you later",
+        "close the assistant",
+        "shut down assistant",
+        "catch you later",
+        "bye bye",
+        "goodnight",
+        "bye for now",
+        "i'm heading out",
+        "later",
+        "see ya",
+        "end the chat",
+        "close the program",
+        "farewell",
+        "i have to go",
+        "signing off"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later!",
+        "Bye! Call me whenever you need help."
+      ],
+      "ends_conversation": true
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "that's helpful",
+        "awesome, thanks",
+        "appreciate it",
+        "cheers",
+        "great job",
+        "nice work",
+        "you're the best",
+        "thx",
+        "many thanks",
+        "perfect thanks",
+        "thanks so much",
+        "thank you kindly",
+        "that helped a lot",
+        "much appreciated",
+        "thanks buddy",
+        "that's great, thank you",
+        "ty",
+        "you've been very helpful",
+        "i appreciate the help",
+        "thanks mate"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "what is your name",
+        "who are you",
+        "what are you",
+        "tell me about yourself",
+        "your name please",
+        "what should i call you",
+        "introduce yourself",
+        "are you a robot",
+        "are you human",
+        "who made you",
+        "who created you",
+        "what's your name",
+        "what do i call you",
+        "do you have a name",
+        "are you artificial intelligence",
+        "are you a bot",
+        "who am i talking to",
+        "who developed you",
+        "what kind of assistant are you",
+        "say your name",
+        "are you a computer program"
+      ],
+      "responses": [
+        "I'm {assistant_name}, your desktop assistant. I can search the web, check the weather, open apps and more.",
+        "My name is {assistant_name}. I'm a Python desktop assistant built to make your day easier."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "help",
+        "what can you do",
+        "what are your features",
+        "how can you help me",
+        "show me commands",
+        "list your abilities",
+        "what do you know",
+        "what are your skills",
+        "how do i use you",
+        "what commands do you support",
+        "options",
+        "menu",
+        "what tasks can you handle",
+        "what can i ask you",
+        "what are you able to do",
+        "give me some examples of commands",
+        "i need some help with commands",
+        "what features do you have",
+        "which commands work",
+        "show help",
+        "how does this work",
+        "commands list"
+      ],
+      "responses": [
+        "Here's what I can do:\n  - Search the web (\"search python tutorials\")\n  - Weather (\"weather in Mumbai\")\n  - Open websites (\"open youtube\")\n  - Open or close apps (\"open notepad\", \"close calculator\")\n  - Open folders (\"open downloads\")\n  - Tell the time or date, or tell a joke"
+      ]
+    },
+    {
+      "tag": "wellbeing",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how's it going",
+        "how do you feel",
+        "are you okay",
+        "what's up",
+        "how have you been",
+        "you good?",
+        "how is your day",
+        "how are things",
+        "how's life",
+        "how are you feeling today",
+        "are you doing well",
+        "everything alright with you",
+        "how's everything",
+        "how are you holding up",
+        "you alright",
+        "doing good?",
+        "how is it going with you"
+      ],
+      "responses": [
+        "I'm running smoothly, thanks for asking! How can I help?",
+        "All systems go! What can I do for you?"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "say something funny",
+        "make me laugh",
+        "joke please",
+        "do you know any jokes",
+        "i want to hear a joke",
+        "tell a joke",
+        "cheer me up",
+        "give me a joke",
+        "another joke",
+        "be funny",
+        "entertain me",
+        "make a joke",
+        "got any jokes",
+        "say a joke",
+        "tell me something hilarious",
+        "lighten the mood",
+        "humor me",
+        "share a funny joke",
+        "crack a joke",
+        "i'm bored, make me laugh"
+      ],
+      "responses": [
+        "{joke}"
+      ],
+      "action": "tell_joke"
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "tell me the time",
+        "current time",
+        "what's the time",
+        "time please",
+        "time now",
+        "do you know the time",
+        "what is the time right now",
+        "clock",
+        "show the time",
+        "check the time",
+        "what hour is it",
+        "what's the current time",
+        "give me the time",
+        "tell me what time it is",
+        "how late is it",
+        "what time do you have",
+        "current time please",
+        "can i get the time",
+        "is it late",
+        "time right now"
+      ],
+      "responses": [
+        "It's {time}.",
+        "The time is {time}."
+      ],
+      "action": "tell_time"
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is the date",
+        "what's today's date",
+        "today's date",
+        "what day is it",
+        "tell me the date",
+        "which day is today",
+        "current date",
+        "date please",
+        "what is today",
+        "what's the date today",
+        "what month is it",
+        "show the date",
+        "which date is today",
+        "tell me today's date please",
+        "what day of the week is it",
+        "what is the date today",
+        "give me the date",
+        "date today",
+        "what's the day today",
+        "which month are we in"
+      ],
+      "responses": [
+        "Today is {date}.",
+        "It's {date}."
+      ],
+      "action": "tell_date"
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather",
+        "weather today",
+        "how is the weather",
+        "weather in mumbai",
+        "is it going to rain",
+        "temperature outside",
+        "what's the temperature in delhi",
+        "weather forecast",
+        "how hot is it",
+        "is it cold outside",
+        "weather in london",
+        "tell me the weather in pune",
+        "check the weather",
+        "will it rain today",
+        "current temperature",
+        "how's the weather outside",
+        "weather in tokyo today",
+        "is it sunny in goa",
+        "do i need an umbrella",
+        "what's the weather like in berlin",
+        "forecast for paris",
+        "temperature in kolkata",
+        "is it windy outside",
+        "weather update",
+        "will it be hot in jaipur"
+      ],
+      "responses": [
+        "It's {temperature}°C and {condition} in {city} (wind {wind} km/h).",
+        "{city}: {condition}, {temperature}°C, wind {wind} km/h."
+      ],
+      "action": "get_weather"
+    },
+    {
+      "tag": "web_search",
+      "patterns": [
+        "search python tutorials",
+        "google machine learning",
+        "search for best laptops",
+        "look up the population of india",
+        "find recipes for pasta",
+        "search the web for news",
+        "google how to cook rice",
+        "search about black holes",
+        "look up nlp",
+        "find information about mars",
+        "search online for cheap flights",
+        "can you google cricket score",
+        "search for the latest movies",
+        "look up who won the world cup",
+        "search youtube tutorials online",
+        "look for good restaurants nearby",
+        "google best phones under 20000",
+        "search information on climate change",
+        "find articles about ai",
+        "web search for job openings",
+        "search how to learn java",
+        "look up the meaning of serendipity",
+        "find the price of bitcoin online",
+        "search news about cricket"
+      ],
+      "responses": [
+        "Searching the web for \"{query}\".",
+        "Here are the results for \"{query}\"."
+      ],
+      "action": "web_search"
+    },
+    {
+      "tag": "open_website",
+      "patterns": [
+        "open youtube",
+        "open google",
+        "go to github",
+        "launch gmail",
+        "open stackoverflow",
+        "take me to wikipedia",
+        "open linkedin",
+        "visit youtube.com",
+        "open the website github.com",
+        "go to google.com",
+        "browse to reddit",
+        "open instagram",
+        "open my mail",
+        "open youtube for me",
+        "open the github website",
+        "go to youtube",
+        "launch google",
+        "visit stackoverflow.com",
+        "open wikipedia please",
+        "take me to youtube",
+        "open reddit.com",
+        "go to linkedin",
+        "load gmail"
+      ],
+      "responses": [
+        "Opening {site}.",
+        "Taking you to {site}."
+      ],
+      "action": "open_website"
+    },
+    {
+      "tag": "open_app",
+      "patterns": [
+        "open notepad",
+        "launch calculator",
+        "start paint",
+        "open file explorer",
+        "run command prompt",
+        "open task manager",
+        "start notepad",
+        "open the calculator",
+        "launch the terminal",
+        "open calc",
+        "start file explorer",
+        "can you open paint",
+        "run notepad",
+        "open paint app",
+        "start the notepad",
+        "launch file explorer",
+        "open the command prompt",
+        "start task manager",
+        "run the calculator",
+        "launch notepad please",
+        "open terminal",
+        "start calc",
+        "fire up paint"
+      ],
+      "responses": [
+        "Opening {app}.",
+        "Launching {app}."
+      ],
+      "action": "open_app"
+    },
+    {
+      "tag": "close_app",
+      "patterns": [
+        "close notepad",
+        "close the calculator",
+        "exit paint",
+        "kill notepad",
+        "shut notepad",
+        "close calculator",
+        "quit paint",
+        "terminate task manager",
+        "close the notepad window",
+        "stop notepad",
+        "end calculator",
+        "close paint",
+        "close the paint",
+        "exit notepad",
+        "quit the calculator",
+        "kill paint",
+        "close calc",
+        "shut the calculator",
+        "exit the calculator app",
+        "close notepad please",
+        "end notepad",
+        "stop paint"
+      ],
+      "responses": [
+        "Closed {app}.",
+        "{app} has been closed."
+      ],
+      "action": "close_app"
+    },
+    {
+      "tag": "open_folder",
+      "patterns": [
+        "open downloads",
+        "open my documents",
+        "show desktop folder",
+        "open pictures folder",
+        "go to downloads folder",
+        "open music folder",
+        "show my videos",
+        "open documents folder",
+        "open the downloads directory",
+        "browse my pictures",
+        "open desktop",
+        "show downloads",
+        "open the documents folder",
+        "show my downloads",
+        "open videos folder",
+        "go to my pictures",
+        "open my music",
+        "show me the desktop folder",
+        "open the pictures directory",
+        "open documents",
+        "browse downloads folder",
+        "open my desktop"
+      ],
+      "responses": [
+        "Opening your {folder} folder.",
+        "Here's your {folder} folder."
+      ],
+      "action": "open_folder"
+    }
+  ]
+}
